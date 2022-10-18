@@ -3,7 +3,7 @@ node_modules/
 dist/
 npm-debug.*
 *.jks
-*.lock
+.lock
 *.p8
 *.p12
 *.key
@@ -13,3 +13,5 @@ web-build/
 
 # macOS
 .DS_Store
+*.lock
+*lock.json
