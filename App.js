@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StyleSheet,View } from 'react-native';
+import {NavigationContainer} from  '@react-navigation/native';
+import MyStack from './screenNavigator/screenNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Mi first app mobile with react native</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+        <MyStack/>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
