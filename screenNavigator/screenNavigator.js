@@ -6,7 +6,7 @@ import LginUser from '../screen/LginUser';
 
 const MyStack = () => {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='Home'>
             <Stack.Screen
                 name='LginUser'
                 component={LginUser}
